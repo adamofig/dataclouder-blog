@@ -32,16 +32,18 @@ if (isLocal) {
 	const files = import.meta.glob<ImageMetadata>("../../**", {
 		import: "default",
 	});
+	const targetPath = src.startsWith("assets/") ? src : path.join(basePath, src);
 	let normalizedPath = path
-		.normalize(path.join("../../", basePath, src))
+		.normalize(path.join("../../", targetPath))
 		.replace(/\\/g, "/");
 	const file = files[normalizedPath];
 	if (!file) {
 		console.error(
 			`\n[ERROR] Image file not found: ${normalizedPath.replace("../../", "src/")}`,
 		);
+	} else {
+		img = await file();
 	}
-	img = await file();
 }
 
 const imageClass = "w-full h-full object-cover";

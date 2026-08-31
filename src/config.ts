@@ -9,15 +9,15 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "Dataclouder",
-	subtitle: "Divulgación Tecnológica & Automatización con IA",
+	subtitle: "Arquitectura Cloud, Agentes IA & Software Moderno",
 	lang: "es", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
-		hue: 220, // Amber/sunset accent (Control Markets brand). OKLCH hue; amber-gold ~70-95. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+		hue: 308, // Dataclouder Deep Purple base & Neon Mint accent.
 		fixed: true, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: false,
-		src: "assets/images/cm-banner.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "assets/images/dataclouder-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -31,11 +31,6 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// Leave this array empty to use the default favicon
-		// {
-		//   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
-		//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-		// }
 	],
 };
 
@@ -53,14 +48,19 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/control-markets-logo.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/dataclouder-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Dataclouder",
-	bio: "Aprende a construir software moderno, agentes de IA y arquitecturas cloud escalables.",
+	bio: "Arquitecturas Cloud, Sistemas de Agentes Autónomos de IA y Desarrollo Web de Alto Rendimiento.",
 	links: [
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/adamofig",
+		},
+		{
+			name: "YouTube",
+			icon: "fa6-brands:youtube",
+			url: "https://www.youtube.com/@dataclouder",
 		},
 	],
 };

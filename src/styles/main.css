@@ -1,30 +1,29 @@
 @tailwind components;
 
-/* Animated sunset background (Control Markets brand) — fixed full-screen layer
-   with a slow "breathing" float. Cards use glassmorphism so this bleeds through. */
+/* Animated floating background (Dataclouder brand: Deep Purple & Neon Mint) — fixed full-screen layer
+   with a slow "breathing" float (40s). Glassmorphism cards let this background bleed through elegantly. */
 body::before {
     content: '';
     position: fixed;
     inset: 0;
     z-index: -1;
-    background-image: url('/backgrounds/diamond-sunset-white.svg');
+    background-image: url('/backgrounds/dataclouder-pattern-light.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     animation: float 40s ease-in-out infinite;
-    /* soften so text/cards stay readable over the gradient */
-    opacity: 0.55;
+    opacity: 0.85;
 }
 
 html.dark body::before {
-    background-image: url('/backgrounds/diamond-sunset-dark.svg');
-    opacity: 0.4;
+    background-image: url('/backgrounds/dataclouder-pattern-dark.svg');
+    opacity: 0.90;
 }
 
 @keyframes float {
-    0%   { transform: scale(1); }
-    50%  { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0%   { transform: scale(1) translateY(0); }
+    50%  { transform: scale(1.06) translateY(-8px); }
+    100% { transform: scale(1) translateY(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -33,30 +32,30 @@ html.dark body::before {
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden transition;
-        /* Sunset glassmorphism: translucent surface + soft amber glow outline */
-        background: color-mix(in oklch, var(--card-bg) 78%, transparent);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border: 1px solid color-mix(in oklch, var(--primary) 18%, transparent);
+        @apply rounded-[var(--radius-large)] overflow-hidden transition duration-300;
+        /* Dataclouder Glassmorphism: translucent surface + luminous boundary */
+        background: color-mix(in oklch, var(--card-bg) 82%, transparent);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid color-mix(in oklch, var(--primary) 20%, transparent);
         box-shadow:
-            0 4px 15px rgba(0, 0, 0, 0.02),
-            0 0 1px color-mix(in oklch, var(--primary) 35%, transparent),
-            0 0 2px color-mix(in oklch, var(--primary) 25%, transparent);
+            0 4px 20px rgba(0, 0, 0, 0.03),
+            0 0 1px color-mix(in oklch, var(--primary) 30%, transparent);
     }
     .card-base.clickable:hover,
     a.card-base:hover {
         transform: translateY(-2px);
+        border-color: color-mix(in oklch, var(--primary) 45%, transparent);
         box-shadow:
-            0 6px 20px rgba(0, 0, 0, 0.04),
-            0 0 8px color-mix(in oklch, var(--primary) 35%, transparent),
-            0 0 2px color-mix(in oklch, var(--primary) 30%, transparent);
+            0 8px 30px rgba(0, 0, 0, 0.08),
+            0 0 12px color-mix(in oklch, var(--primary) 40%, transparent),
+            0 0 2px color-mix(in oklch, var(--primary) 60%, transparent);
     }
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
         @apply transition;
     }
     .card-shadow {
-        @apply drop-shadow-[0_2px_4px_rgba(0,0,0,0.005)]
+        @apply drop-shadow-[0_2px_6px_rgba(0,0,0,0.02)]
     }
     .expand-animation {
         @apply relative before:ease-out before:transition active:bg-none hover:before:bg-[var(--btn-plain-bg-hover)] active:before:bg-[var(--btn-plain-bg-active)] z-0

@@ -1,18 +1,28 @@
-# About
+# Acerca de Dataclouder ☁️⚡
 
-**Control Markets** is a platform to automate marketing, content creation, and persona-based AI agents — turning ideas into published content with as little manual work as possible.
+**Dataclouder** es un ecosistema tecnológico enfocado en la ingeniería de software moderna, la arquitectura de sistemas en la nube escalables y la orquestación de agentes autónomos de Inteligencia Artificial.
 
-Instead of juggling disconnected tools, you build visual **flows** on a canvas: AI agents, data sources, content generators, and distribution channels wired together to research, write, design, render video, and publish across your channels.
+Nuestra misión es democratizar el acceso al conocimiento técnico de vanguardia, compartiendo arquitecturas de referencia, boilerplates de grado de producción y metodologías probadas para construir soluciones digitales de alto impacto.
 
-## What you can do
+---
 
-- **Persona-based AI agents** — define agents with their own voice, knowledge, and goals.
-- **Node-based flows** — connect agents, tasks, assets, and outputs on a visual canvas.
-- **Multi-format content** — generate text, images, and video from a single workflow.
-- **Automated distribution** — schedule and publish to your social channels.
+## 🚀 Áreas de Enfoque y Especialidad
 
-## This blog
+- 🤖 **Sistemas Multi-Agente & Automatización Inteligente**: Diseño e implementación de agentes de IA coordinados con capacidades de investigación, codificación, redacción y toma de decisiones.
+- ⚡ **Arquitecturas Cloud & Edge Computing**: Despliegues globales de baja latencia con Cloudflare Workers, Pages, microservicios y bases de datos serverless.
+- 🎨 **Diseño UI/UX Futurista & Sistemas de Diseño**: Interfaces inmersivas construidas sobre Glassmorphism, tokens semánticos, animaciones fluidas y experiencias de usuario excepcionales.
+- 🛠️ **Stacks de Desarrollo Moderno**: Desarrollo full-stack con Astro, Angular, FastAPI, NestJS, Tailwind CSS y TypeScript.
 
-A space for guides, product notes, and behind-the-scenes on how we build and use Control Markets — including how this blog itself is set up and themed.
+---
 
-> Built with [Astro](https://astro.build/) on the [Fuwari](https://github.com/saicaca/fuwari) template, customized with the Control Markets sunset design system.
+## 📚 Sobre Este Blog
+
+El **Blog de Ingeniería de Dataclouder** es administrado y nutrido en colaboración con nuestro equipo agéntico de desarrollo y redacción (**Pristina ✍️**, **Pikina 🎨**, **Anubis ⚡**). 
+
+Aquí encontrarás:
+1. Guías paso a paso y tutoriales prácticos de código.
+2. Desgloses arquitectónicos de nuestros proyectos y plantillas.
+3. Novedades y análisis sobre el ecosistema de IA generativa y computación en la nube.
+
+> Desarrollado con [Astro](https://astro.build/) y adaptado bajo el **Sistema de Diseño Oficial de Dataclouder** (Deep Purple `#2d0c62` & Neon Mint `#4EF9BA`).
+

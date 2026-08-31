@@ -2,7 +2,7 @@
 title: "Bienvenidos a Dataclouder: Construyendo el Futuro con IA y Software Moderno"
 published: 2026-08-30
 description: "Inauguración del blog oficial de Dataclouder. Aquí exploraremos arquitecturas cloud, orquestación de agentes inteligentes y desarrollo web de alto rendimiento."
-image: ""
+image: "assets/images/dataclouder-banner.png"
 tags: ["Dataclouder", "Ingeniería", "Agentes IA", "Desarrollo Web"]
 category: "Anuncios"
 draft: false

@@ -2,23 +2,25 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="relative transition overflow-hidden rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 py-6 px-8 flex flex-col md:flex-row items-center justify-between gap-6 mt-6 onload-animation">
-    <div class="z-10 flex flex-col gap-1 max-w-lg text-center md:text-left">
-        <div class="font-bold text-lg text-black/90 dark:text-white/90">
-            Control Markets
+<div class="card-base relative transition overflow-hidden py-6 px-8 flex flex-col md:flex-row items-center justify-between gap-6 mt-8 onload-animation">
+    <div class="z-10 flex flex-col gap-1.5 max-w-lg text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-2.5">
+            <img src="/dataclouder-icon.svg" alt="Dataclouder Logo" class="w-6 h-6" />
+            <span class="font-bold text-lg text-90">Dataclouder</span>
         </div>
-        <div class="text-sm text-black/50 dark:text-white/50">
-            Automatiza tu marketing digital utilizando agentes de inteligencia artificial y flujos de trabajo inteligentes.
+        <div class="text-sm text-50">
+            Aprende a construir arquitecturas cloud escalables, sistemas de agentes autónomos de IA y aplicaciones web de alto impacto.
         </div>
     </div>
     <div class="z-10 flex flex-row gap-3">
-        <a href="https://github.com/control-markets" target="_blank" class="flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-black/10 hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20 text-black/80 dark:text-white/90 transition active:scale-95">
+        <a href="https://github.com/adamofig" target="_blank" class="flex items-center gap-2 px-4 py-2.5 text-sm font-semibold rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 text-black/80 dark:text-white/90 transition active:scale-95 border border-black/10 dark:border-white/10">
             <Icon name="fa6-brands:github" class="text-base" />
             GitHub
         </a>
-        <a href="http://localhost:8120" target="_blank" class="flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-[var(--primary)] text-white hover:opacity-90 transition active:scale-95">
-            <Icon name="material-symbols:open-in-new-rounded" class="text-base" />
-            Iniciar App
+        <a href="https://www.youtube.com/@dataclouder" target="_blank" class="flex items-center gap-2 px-4 py-2.5 text-sm font-semibold rounded-lg bg-[var(--primary)] text-white dark:text-black font-bold hover:opacity-90 shadow-md transition active:scale-95">
+            <Icon name="fa6-brands:youtube" class="text-base" />
+            YouTube
         </a>
     </div>
 </div>
+
